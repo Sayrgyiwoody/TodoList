@@ -1,0 +1,119 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*--------Variables-----*/
+:root {
+    --primary : #8cbed6;
+    --secondary : #57899F;
+    --black : #283E3A;
+}
+
+label {
+    display: flex;
+}
+label p {
+    margin-left: 10px;
+}
+main {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container-box {
+    width: auto;
+    height: auto;
+    background-color: var(--secondary);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.filterDiv {
+    display: flex;
+}
+.ctrlDiv p {
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+
+.icon i {
+    margin-left: 3px;
+    cursor: pointer;
+}
+.red {
+    color: #ab2830;
+}
+.fa-pen-to-square {
+    color:#354A53 ;
+}
+.input-box input {
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 0 0 0 20px;
+    font-weight: 800;
+}
+
+.list-text {
+    font-weight: 600;
+    color: #171e3a;
+    cursor: pointer;
+}
+
+.noTask{
+    text-align: center;
+    margin-top: 20px;
+    color: #a4044c;
+    font-weight: 600;
+}
+.list-item {
+    list-style: none;
+    margin: 20px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--black);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.ctrlDiv {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.active {
+    color:#ffffff !important;
+    font-weight: 600;
+}
+
+.ctrlDiv p span {
+    color: #1c262d ;
+    font-weight: 500;
+}
+
+.clear-btn {
+    padding: 4px 8px;
+    border-radius: 5px;
+    background-color:#354A53 ;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: .5s;
+}
+.clear-btn:hover {
+    background-color: #3d4a71;
+}
+
+/*------active checkbox-----*/
+.task-active {
+    text-decoration: line-through!important;
+}
